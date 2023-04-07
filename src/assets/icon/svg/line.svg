@@ -1,0 +1,14 @@
+<svg id="line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1017.335" height="340.233" viewBox="0 0 1017.335 340.233">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_214" data-name="Rectangle 214" width="1017.335" height="340.233" fill="#939cac"/>
+    </clipPath>
+  </defs>
+  <g id="Group_345" data-name="Group 345" clip-path="url(#clip-path)">
+    <path id="Path_2329" data-name="Path 2329" d="M470.449,40.422a5,5,0,0,0-7.02.846L449.711,58.743a64.75,64.75,0,1,0-126.458,24.79A126.48,126.48,0,0,0,136.2,238.931L113.97,229.4a5,5,0,1,0-3.94,9.192l35,15a5,5,0,0,0,6.767-3.185l10-34a5,5,0,0,0-9.594-2.822L145.7,235.7A116.508,116.508,0,1,1,252,304.5v10a126.43,126.43,0,0,0,95.132-209.783l.331-.347A54.75,54.75,0,0,1,385.25,10a54.822,54.822,0,0,1,54.488,49.439L422.057,41.793a5,5,0,1,0-7.064,7.078l26.953,26.9a5,5,0,0,0,3.532,1.461c.1,0,.2,0,.3-.009a5,5,0,0,0,3.631-1.9L471.3,47.443a5,5,0,0,0-.846-7.021" fill="#939cac"/>
+    <rect id="Rectangle_211" data-name="Rectangle 211" width="5" height="41" transform="translate(244 69)" fill="#939cac"/>
+    <rect id="Rectangle_212" data-name="Rectangle 212" width="5" height="41" transform="translate(561 271)" fill="#939cac"/>
+    <rect id="Rectangle_213" data-name="Rectangle 213" width="5" height="41" transform="translate(880 271)" fill="#939cac"/>
+    <path id="Path_2330" data-name="Path 2330" d="M1017.326,307.978a5,5,0,0,0-1.9-3.631l-27.876-21.883a5,5,0,1,0-6.175,7.865L998.785,304H231c-.334,0-.666-.011-1-.012V304H0v10H999.563L981.9,331.7a5,5,0,0,0,7.079,7.064l26.9-26.953a5,5,0,0,0,1.452-3.834m-12.826,1.075v-.567l.317.249Z" fill="#939cac"/>
+  </g>
+</svg>
