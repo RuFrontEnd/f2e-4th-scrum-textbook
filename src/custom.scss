@@ -50,10 +50,7 @@ $gutters: (
 @import "~bootstrap/scss/helpers";
 
 // container padding ---
-@mixin make-container(
-  $padding-x: $container-padding-x,
-  $multiple: 0.833333335
-) {
+@mixin make-container($padding-x: $container-padding-x, $multiple: 0.833333335) {
   width: 100%;
   padding-right: $padding-x * $multiple;
   padding-left: $padding-x * $multiple;
@@ -183,17 +180,6 @@ $utilities: map-merge(
     "color": (
       property: color,
       class: "text",
-      values: $project-colors,
-    ),
-  )
-);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    "background-color": (
-      property: background-color,
-      class: bg,
       values: $project-colors,
     ),
   )
@@ -396,63 +382,6 @@ $utilities: map-merge(
   )
 );
 
-// sizing
-$utilities: map-merge(
-  $utilities,
-  (
-    "width": (
-      property: width,
-      class: w,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
-    "max-width": (
-      property: max-width,
-      class: mw,
-      values: (
-        100: 100%,
-      ),
-    ),
-    "min-width": (
-      property: min-width,
-      class: mnw,
-      values: (
-        100: 100%,
-      ),
-    ),
-    "height": (
-      property: height,
-      class: h,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
-    "max-height": (
-      property: max-height,
-      class: mh,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
-  )
-);
-
 // object-fit
 $utilities: map-merge(
   $utilities,
@@ -472,8 +401,7 @@ $utilities: map-merge(
 );
 
 $border: (
-  null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-    map-get($project-colors, "black-core"),
+  null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($project-colors, "black-core"),
   0: 0,
   1: 1px var(--#{$prefix}border-style) map-get($project-colors, "black-core"),
 );
@@ -581,6 +509,7 @@ $zIndex: (
   100: 100,
   1000: 1000,
   10000: 10000,
+  max: 2147483647,
 );
 
 // z-index
@@ -635,6 +564,11 @@ $utilities: map-merge(
         repeat: repeat,
         none: no-repeat,
       ),
+    ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: $project-colors,
     ),
   )
 );
@@ -720,6 +654,20 @@ $utilities: map-merge(
       class: white-space,
       values: (
         no-wrap: nowrap,
+      ),
+    ),
+  )
+);
+
+// box-sizing
+$utilities: map-merge(
+  $utilities,
+  (
+    "box-sizing": (
+      property: box-sizing,
+      class: box,
+      values: (
+        border: border-box,
       ),
     ),
   )

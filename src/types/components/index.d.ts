@@ -1,6 +1,6 @@
-import type ProgressBar from "./progressBar";
-import type DialogBox from "./dialogBox";
+import type Box from "./box";
 import type Button from "./button";
+import type ProgressBar from "./progressBar";
 import type LayOut from "./layOut";
 
-export type { ProgressBar, Button, DialogBox, LayOut };
+export type { Box, Button, ProgressBar, LayOut };
