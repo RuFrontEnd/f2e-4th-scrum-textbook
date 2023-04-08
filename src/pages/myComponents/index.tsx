@@ -31,6 +31,8 @@ const myComponents = () => {
           </Components.Box>
         </div>
       </div>
+      <div style={{ padding: "20px 0px" }} />
+      <Components.ProgressBar completed={10} />
     </>
   );
 };

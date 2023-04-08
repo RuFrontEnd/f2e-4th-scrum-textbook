@@ -12,7 +12,7 @@ function Box(props: Types.Components.Box.Props) {
         }}
       >
         <div
-          className={`${styles.char} position-absolute px-4 py-3 top-0 start-0`}
+          className={`${styles.char} position-absolute px-4 py-2_5 top-0 start-0`}
           style={{
             backgroundColor: props.tagColor,
           }}

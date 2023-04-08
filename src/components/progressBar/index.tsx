@@ -6,7 +6,7 @@ function ProgressBar(props: Types.Components.ProgressBar.Props) {
     <div className={`rounded-pill overflow-hidden ${styles.container}`}>
       <div
         style={{ width: `${props.completed}%` }}
-        className="bg-orange-2 h-100p rounded-pill"
+        className="bg-orange-2 h-100 rounded-pill"
       />
     </div>
   );
