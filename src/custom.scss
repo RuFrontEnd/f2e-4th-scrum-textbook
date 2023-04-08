@@ -62,25 +62,14 @@ $gutters: (
   @include make-container();
 }
 
-// font size ---
-$font-size-base: 1rem;
+// font ---
 
-$line-height-base: 1.25;
-$line-height-sm: 1;
-$line-height-lg: 1.4;
-
-$h1-font-size: $font-size-base * 2.5; // 40
-$h2-font-size: $font-size-base * 2; // 32
-$h3-font-size: $font-size-base * 1.75; // 28
-$h4-font-size: $font-size-base * 1.5; // 24
-$h5-font-size: $font-size-base * 1.25; // 20
-$h6-font-size: $font-size-base * 1.125; // 18
-$t-font-size: $font-size-base; // 16
-$st-font-size: $font-size-base * 0.875; // 14
-$bd1-font-size: $font-size-base; // 16
-$bd2-font-size: $font-size-base * 0.875; // 14
-$cp1-font-size: $font-size-base * 0.75; // 12
-$cp2-font-size: $font-size-base * 0.75; // 12
+$font-family-noto-sans-TC: "Noto Sans TC", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$font-families: (
+  noto-TC: $font-family-noto-sans-TC,
+  roboto: $font-family-roboto,
+);
 
 $font-sizes: (
   1: $h1-font-size,
@@ -89,87 +78,38 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  t: $t-font-size,
-  st: $st-font-size,
-  bd1: $bd1-font-size,
-  bd2: $bd1-font-size,
-  cp1: $cp1-font-size,
-  cp2: $cp2-font-size,
+  16px: 16px,
+  20px: 20px,
+  24px: 24px,
+);
+$font-weights: (
+  black: 900,
+  bold: 700,
+  medium: 500,
+  regular: 400,
+  thin: 100,
 );
 
 $utilities: map-merge(
   $utilities,
   (
+    "font-family": (
+      rfs: true,
+      property: font-family,
+      class: ff,
+      values: $font-families,
+    ),
     "font-size": (
       rfs: true,
       property: font-size,
       class: fs,
       values: $font-sizes,
     ),
-  )
-);
-
-$font-family-noto-sans: "Noto Sans";
-
-$font: (
-  1: $font-weight-bold
-    (
-      $h1-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  2: $font-weight-bold
-    (
-      $h2-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  3: $font-weight-bold
-    (
-      $h3-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  4: $font-weight-bold
-    (
-      $h4-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  5: $font-weight-bold
-    (
-      $h5-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  6: $font-weight-bold
-    (
-      $h6-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  t: $font-weight-bold
-    (
-      $t-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  st: $font-weight-bold
-    (
-      $st-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  bd1: $font-weight-normal
-    (
-      $bd1-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  bd2: $font-weight-normal
-    (
-      $bd2-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  cp1: $font-weight-bold
-    (
-      $cp1-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  cp2: $font-weight-normal
-    (
-      $cp2-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    "font": (
-      property: font,
-      class: f,
-      responsive: true,
-      values: $font,
+    "font-weight": (
+      rfs: true,
+      property: font-weight,
+      class: fw,
+      values: $font-weights,
     ),
   )
 );
