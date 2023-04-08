@@ -1,4 +1,19 @@
+@import "maps";
+
 .button {
+  background-color: map-get($project-colors, green-1);
+  color: map-get($project-colors, green-4);
   height: 60px;
   border-radius: 45px;
+  transition: 0.25s;
+
+  &.disabled {
+    cursor: auto;
+    background-color: map-get($project-colors, gray-1);
+  }
+
+  &:hover:not(.disabled) {
+    background-color: map-get($project-colors, orange-2);
+    transition: 0.25s;
+  }
 }
