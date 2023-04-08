@@ -35,7 +35,9 @@ const myComponents = () => {
       <div style={{ padding: "20px 0px" }} />
       <Components.ProgressBar completed={10} />
       <div style={{ padding: "20px 0px" }} />
-      <Layouts.BG>123</Layouts.BG>
+      <Components.List />
+      {/* <div style={{ padding: "20px 0px" }} /> */}
+      {/* <Layouts.BG>123</Layouts.BG> */}
     </>
   );
 };

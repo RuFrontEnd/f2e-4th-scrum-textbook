@@ -1,6 +1,6 @@
 import type Box from "./box";
 import type Button from "./button";
 import type ProgressBar from "./progressBar";
-import type LayOut from "./layOut";
+import type List from "./list";
 
-export type { Box, Button, ProgressBar, LayOut };
+export type { Box, Button, List, ProgressBar };
