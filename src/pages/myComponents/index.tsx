@@ -1,5 +1,6 @@
 import * as variables from "variables";
 import * as Components from "components";
+import * as Layouts from "layouts";
 
 const myComponents = () => {
   return (
@@ -33,6 +34,8 @@ const myComponents = () => {
       </div>
       <div style={{ padding: "20px 0px" }} />
       <Components.ProgressBar completed={10} />
+      <div style={{ padding: "20px 0px" }} />
+      <Layouts.BG>123</Layouts.BG>
     </>
   );
 };
