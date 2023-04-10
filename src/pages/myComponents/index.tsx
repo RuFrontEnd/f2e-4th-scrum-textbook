@@ -55,8 +55,13 @@ const myComponents = () => {
       <div style={{ padding: "20px 0px" }} />
       Checked
       <br />
-      <Components.Checkbox width={30} height={30} checked/>
+      <Components.Checkbox width={30} height={30} checked />
       <div style={{ padding: "20px 0px" }} />
+      Modal
+      <br />
+      <Components.Modal
+      // width={30} height={30} checked
+      />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>
