@@ -53,6 +53,10 @@ const myComponents = () => {
       <br />
       <Components.Plate>My Plate</Components.Plate>
       <div style={{ padding: "20px 0px" }} />
+      Checked
+      <br />
+      <Components.Checkbox width={30} height={30} checked/>
+      <div style={{ padding: "20px 0px" }} />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>
