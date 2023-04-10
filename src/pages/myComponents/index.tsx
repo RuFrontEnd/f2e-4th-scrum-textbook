@@ -33,9 +33,35 @@ const myComponents = () => {
         </div>
       </div>
       <div style={{ padding: "20px 0px" }} />
+      ProgressBar
+      <br />
       <Components.ProgressBar completed={10} />
       <div style={{ padding: "20px 0px" }} />
+      List
+      <br />
       <Components.List />
+      <div style={{ padding: "20px 0px" }} />
+      Mark
+      <br />
+      <Components.Mark number={1} size={24} color={variables.colors.orange2} />
+      <div style={{ padding: "20px 0px" }} />
+      Tray
+      <br />
+      <Components.Tray width={"350px"} height={"90px"} />
+      <div style={{ padding: "20px 0px" }} />
+      Plate
+      <br />
+      <Components.Plate>My Plate</Components.Plate>
+      <div style={{ padding: "20px 0px" }} />
+      Checked
+      <br />
+      <Components.Checkbox width={30} height={30} checked />
+      <div style={{ padding: "20px 0px" }} />
+      Modal
+      <br />
+      <Components.Modal
+      // width={30} height={30} checked
+      />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>
