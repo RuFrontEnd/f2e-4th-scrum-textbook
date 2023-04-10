@@ -38,6 +38,9 @@ const myComponents = () => {
       <Components.List />
       <div style={{ padding: "20px 0px" }} />
       <Components.Mark number={1} size={24} color={variables.colors.orange2} />
+      <div style={{ padding: "20px 0px" }} />
+      <Components.Tray width={"240px"} height={"120px"} />
+      <div style={{ padding: "20px 0px" }} />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>

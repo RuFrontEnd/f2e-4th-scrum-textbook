@@ -50,7 +50,10 @@ $gutters: (
 @import "~bootstrap/scss/helpers";
 
 // container padding ---
-@mixin make-container($padding-x: $container-padding-x, $multiple: 0.833333335) {
+@mixin make-container(
+  $padding-x: $container-padding-x,
+  $multiple: 0.833333335
+) {
   width: 100%;
   padding-right: $padding-x * $multiple;
   padding-left: $padding-x * $multiple;
@@ -328,7 +331,7 @@ $utilities: map-merge(
         ),
     ),
     // Padding utilities
-    "padding":
+      "padding":
       (
         responsive: true,
         property: padding,
@@ -372,7 +375,7 @@ $utilities: map-merge(
       values: $spacers,
     ),
     // Gap utility
-    "gap":
+      "gap":
       (
         responsive: true,
         property: gap,
@@ -401,7 +404,8 @@ $utilities: map-merge(
 );
 
 $border: (
-  null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($project-colors, "black-core"),
+  null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+    map-get($project-colors, "black-core"),
   0: 0,
   1: 1px var(--#{$prefix}border-style) map-get($project-colors, "black-core"),
 );
@@ -442,6 +446,7 @@ $utilities: map-merge(
       class: border-style,
       values: (
         solid: solid,
+        dashed: dashed,
       ),
     ),
     "border": (
@@ -601,22 +606,22 @@ $utilities: map-merge(
   ),
   (
     // TODO: 後續研究如何 utilize webkit 屬性
-    //     "-webkit-line-clamp": (
-    //         property: -webkit-line-clamp,
-    //         class: line-clamp,
-    //         values: (
-    //             2: 2,
-    //             3: 3,
-    //         ),
-    //     ),
-    // ),
-    // (
-    //     "box-orient": (
-    //         property: -webkit-box-orient,
-    //         values: (
-    //             vertical: vertical,
-    //         ),
-    //     ),
+      //     "-webkit-line-clamp": (
+      //         property: -webkit-line-clamp,
+      //         class: line-clamp,
+      //         values: (
+      //             2: 2,
+      //             3: 3,
+      //         ),
+      //     ),
+      // ),
+      // (
+      //     "box-orient": (
+      //         property: -webkit-box-orient,
+      //         values: (
+      //             vertical: vertical,
+      //         ),
+      //     ),
   )
 );
 

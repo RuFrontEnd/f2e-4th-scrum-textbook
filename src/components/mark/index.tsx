@@ -1,11 +1,10 @@
-import styles from "./styles.module.scss";
 import type * as Types from "types";
 
 function Mark(props: Types.Components.Mark.Props) {
   return (
     <div
       className={
-        "d-flex justify-content-center align-items-center rounded-circle text-white"
+        "d-inline-flex justify-content-center align-items-center rounded-circle text-white"
       }
       style={{
         width: `${props.size}px`,
