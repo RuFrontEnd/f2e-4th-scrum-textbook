@@ -4,7 +4,7 @@ function Mark(props: Types.Components.Mark.Props) {
   return (
     <div
       className={
-        "d-inline-flex justify-content-center align-items-center rounded-circle text-white"
+        "ff-roboto d-inline-flex justify-content-center align-items-center rounded-circle text-white"
       }
       style={{
         width: `${props.size}px`,
