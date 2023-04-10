@@ -4,7 +4,7 @@ import type * as Types from "types";
 function Tray(props: Types.Components.Tray.Props) {
   return (
     <div
-      className={`position-relative`}
+      className={`position-relative d-inline-block`}
       style={{ width: props.width, height: props.height }}
     >
       <svg
