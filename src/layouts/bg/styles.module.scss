@@ -1,20 +1,7 @@
-.container{
-    position: relative;
-}
-
-.bg{
+.bg {
     height: 100vh;
     width: 100%;
-}
-
-.navbar{
-    display: flex;
-    position: absolute;
-    top: 37px;
-    left: 50%;
-    transform: translateX(-50%);
-}
- 
-.logo{
-    width: 320px;
+    background-image: url("/assets/picture/jpg/bg.jpg");
+    background-position: center;
+    background-size: cover;
 }
