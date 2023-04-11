@@ -60,7 +60,7 @@ const myComponents = () => {
       <div style={{ padding: "20px 0px" }} />
       Modal
       <br />
-      <Components.Modal>
+      <Components.Modal visible={false}>
         <img src={fish} width={525} height={525} />
         <Components.Brand
           className="mb-18"
