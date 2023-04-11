@@ -1,3 +1,4 @@
+import fish from "assets/picture/png/fish.png";
 import * as variables from "variables";
 import * as Components from "components";
 import * as Layouts from "layouts";
@@ -59,9 +60,24 @@ const myComponents = () => {
       <div style={{ padding: "20px 0px" }} />
       Modal
       <br />
-      <Components.Modal
-      // width={30} height={30} checked
-      />
+      <Components.Modal>
+        <img src={fish} width={525} height={525} />
+        <Components.Brand
+          className="mb-18"
+          color={variables.colors.green}
+          width={"450px"}
+          onClick={() => {}}
+        >
+          恭喜你完成了! 獲得逗貓鼠鼠一隻!
+        </Components.Brand>
+        <Components.Button
+          color={variables.colors.green}
+          width={"450px"}
+          onClick={() => {}}
+        >
+          繼續了解Sprint 流程！
+        </Components.Button>
+      </Components.Modal>
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>

@@ -1,4 +1,5 @@
 import type Box from "./box";
+import type Brand from "./brand";
 import type Button from "./button";
 import type Checkbox from "./checkbox";
 import type List from "./list";
@@ -10,6 +11,7 @@ import type Tray from "./tray";
 
 export type {
   Box,
+  Brand,
   Button,
   Checkbox,
   List,
