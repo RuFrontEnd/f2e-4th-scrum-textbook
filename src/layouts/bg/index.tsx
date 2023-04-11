@@ -1,14 +1,15 @@
 import styles from "./styles.module.scss";
-import BG from "assets/picture/jpg/bg.jpg";
+import background from "assets/picture/jpg/bg.jpg";
 import Logo from "assets/icon/svg/title-2.svg";
 import type * as Types from "types";
 import * as Components from "components";
+import * as Layouts from "layouts";
 
-const LayOut = (props: Types.Components.LayOut.Props) => {
+const BG = (props: Types.Layouts.BG.Props) => {
   return (
     <>
       <div className={styles.container}>
-        <img src={BG} className={styles.bg} />
+        <img src={background} className={styles.bg} />
         <div className={styles.navbar}>
           <img src={Logo} className={styles.logo} />
           <Components.ProgressBar completed={155} />
@@ -19,4 +20,4 @@ const LayOut = (props: Types.Components.LayOut.Props) => {
   );
 };
 
-export default LayOut;
+export default BG;

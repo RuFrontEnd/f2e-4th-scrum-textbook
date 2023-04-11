@@ -1,3 +1,3 @@
-// import * as xxx from "";
+import * as colors from "./colors";
 
-export {};
+export { colors };

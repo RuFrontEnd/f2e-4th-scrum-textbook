@@ -1,0 +1,10 @@
+@import "maps";
+
+.rect {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  fill: map-get($project-colors, white);
+  stroke: map-get($project-colors, gray-1);
+  stroke-width: 2px;
+  fill-opacity: 0.1;
+}

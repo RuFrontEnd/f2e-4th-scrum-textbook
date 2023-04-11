@@ -1,11 +1,8 @@
 import * as Types from "types";
 
 type Props = {
-  color: string;
-  width: string;
-  disabled?: boolean;
+  visible?: boolean;
   children: React.ReactNode;
-  onClick: () => void;
 } & Types.Commons.Props;
 
 export type { Props };

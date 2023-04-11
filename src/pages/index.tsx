@@ -1,5 +1,6 @@
 import Home from "./home";
 import Introduce from "./introduce";
+import MyComponents from "./myComponents";
 import ProductTodoList from "./productTodoList";
 import SprintPlanning from "./sprintPlanning";
 import SprintBacklog from "./sprintBacklog";
@@ -11,6 +12,7 @@ import End from "./end";
 export {
   Home,
   Introduce,
+  MyComponents,
   ProductTodoList,
   SprintPlanning,
   SprintBacklog,

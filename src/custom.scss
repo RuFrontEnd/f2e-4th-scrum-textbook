@@ -65,25 +65,14 @@ $gutters: (
   @include make-container();
 }
 
-// font size ---
-$font-size-base: 1rem;
+// font ---
 
-$line-height-base: 1.25;
-$line-height-sm: 1;
-$line-height-lg: 1.4;
-
-$h1-font-size: $font-size-base * 2.5; // 40
-$h2-font-size: $font-size-base * 2; // 32
-$h3-font-size: $font-size-base * 1.75; // 28
-$h4-font-size: $font-size-base * 1.5; // 24
-$h5-font-size: $font-size-base * 1.25; // 20
-$h6-font-size: $font-size-base * 1.125; // 18
-$t-font-size: $font-size-base; // 16
-$st-font-size: $font-size-base * 0.875; // 14
-$bd1-font-size: $font-size-base; // 16
-$bd2-font-size: $font-size-base * 0.875; // 14
-$cp1-font-size: $font-size-base * 0.75; // 12
-$cp2-font-size: $font-size-base * 0.75; // 12
+$font-family-noto-sans-TC: "Noto Sans TC", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$font-families: (
+  noto-TC: $font-family-noto-sans-TC,
+  roboto: $font-family-roboto,
+);
 
 $font-sizes: (
   1: $h1-font-size,
@@ -92,87 +81,38 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  t: $t-font-size,
-  st: $st-font-size,
-  bd1: $bd1-font-size,
-  bd2: $bd1-font-size,
-  cp1: $cp1-font-size,
-  cp2: $cp2-font-size,
+  16px: 16px,
+  20px: 20px,
+  24px: 24px,
+);
+$font-weights: (
+  black: 900,
+  bold: 700,
+  medium: 500,
+  regular: 400,
+  thin: 100,
 );
 
 $utilities: map-merge(
   $utilities,
   (
+    "font-family": (
+      rfs: true,
+      property: font-family,
+      class: ff,
+      values: $font-families,
+    ),
     "font-size": (
       rfs: true,
       property: font-size,
       class: fs,
       values: $font-sizes,
     ),
-  )
-);
-
-$font-family-noto-sans: "Noto Sans";
-
-$font: (
-  1: $font-weight-bold
-    (
-      $h1-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  2: $font-weight-bold
-    (
-      $h2-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  3: $font-weight-bold
-    (
-      $h3-font-size,
-    ) / $line-height-base $font-family-noto-sans,
-  4: $font-weight-bold
-    (
-      $h4-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  5: $font-weight-bold
-    (
-      $h5-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  6: $font-weight-bold
-    (
-      $h6-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  t: $font-weight-bold
-    (
-      $t-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  st: $font-weight-bold
-    (
-      $st-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  bd1: $font-weight-normal
-    (
-      $bd1-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  bd2: $font-weight-normal
-    (
-      $bd2-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  cp1: $font-weight-bold
-    (
-      $cp1-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-  cp2: $font-weight-normal
-    (
-      $cp2-font-size,
-    ) / $line-height-lg $font-family-noto-sans,
-);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    "font": (
-      property: font,
-      class: f,
-      responsive: true,
-      values: $font,
+    "font-weight": (
+      rfs: true,
+      property: font-weight,
+      class: fw,
+      values: $font-weights,
     ),
   )
 );
@@ -183,17 +123,6 @@ $utilities: map-merge(
     "color": (
       property: color,
       class: "text",
-      values: $project-colors,
-    ),
-  )
-);
-
-$utilities: map-merge(
-  $utilities,
-  (
-    "background-color": (
-      property: background-color,
-      class: bg,
       values: $project-colors,
     ),
   )
@@ -223,6 +152,9 @@ $spacers: (
   14: $spacer * 3.5,
   15: $spacer * 3.75,
   16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
   20: $spacer * 5,
   22: $spacer * 5.5,
   26: $spacer * 6.5,
@@ -342,7 +274,7 @@ $utilities: map-merge(
         ),
     ),
     // Padding utilities
-    "padding":
+      "padding":
       (
         responsive: true,
         property: padding,
@@ -386,70 +318,13 @@ $utilities: map-merge(
       values: $spacers,
     ),
     // Gap utility
-    "gap":
+      "gap":
       (
         responsive: true,
         property: gap,
         class: gap,
         values: $spacers,
       ),
-  )
-);
-
-// sizing
-$utilities: map-merge(
-  $utilities,
-  (
-    "width": (
-      property: width,
-      class: w,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
-    "max-width": (
-      property: max-width,
-      class: mw,
-      values: (
-        100: 100%,
-      ),
-    ),
-    "min-width": (
-      property: min-width,
-      class: mnw,
-      values: (
-        100: 100%,
-      ),
-    ),
-    "height": (
-      property: height,
-      class: h,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
-    "max-height": (
-      property: max-height,
-      class: mh,
-      responsive: true,
-      values:
-        map-merge(
-          map-merge($spacers, $percentage),
-          (
-            auto: auto,
-          )
-        ),
-    ),
   )
 );
 
@@ -495,6 +370,7 @@ $border-width: (
   3: 3px,
   4: 4px,
   5: 5px,
+  20: 20px,
 );
 
 // border
@@ -513,6 +389,7 @@ $utilities: map-merge(
       class: border-style,
       values: (
         solid: solid,
+        dashed: dashed,
       ),
     ),
     "border": (
@@ -576,11 +453,13 @@ $utilities: map-merge(
 );
 
 $zIndex: (
+  down: -1,
   base: 1,
   10: 10,
   100: 100,
   1000: 1000,
   10000: 10000,
+  max: 2147483647,
 );
 
 // z-index
@@ -636,6 +515,11 @@ $utilities: map-merge(
         none: no-repeat,
       ),
     ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: $project-colors,
+    ),
   )
 );
 
@@ -666,22 +550,22 @@ $utilities: map-merge(
   ),
   (
     // TODO: 後續研究如何 utilize webkit 屬性
-    //     "-webkit-line-clamp": (
-    //         property: -webkit-line-clamp,
-    //         class: line-clamp,
-    //         values: (
-    //             2: 2,
-    //             3: 3,
-    //         ),
-    //     ),
-    // ),
-    // (
-    //     "box-orient": (
-    //         property: -webkit-box-orient,
-    //         values: (
-    //             vertical: vertical,
-    //         ),
-    //     ),
+      //     "-webkit-line-clamp": (
+      //         property: -webkit-line-clamp,
+      //         class: line-clamp,
+      //         values: (
+      //             2: 2,
+      //             3: 3,
+      //         ),
+      //     ),
+      // ),
+      // (
+      //     "box-orient": (
+      //         property: -webkit-box-orient,
+      //         values: (
+      //             vertical: vertical,
+      //         ),
+      //     ),
   )
 );
 
@@ -721,6 +605,46 @@ $utilities: map-merge(
       values: (
         no-wrap: nowrap,
       ),
+    ),
+  )
+);
+
+// box-sizing
+$utilities: map-merge(
+  $utilities,
+  (
+    "box-sizing": (
+      property: box-sizing,
+      class: box,
+      values: (
+        border: border-box,
+      ),
+    ),
+  )
+);
+
+$opacity: (
+  0: 0%,
+  10: 10%,
+  20: 20%,
+  30: 30%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  80: 80%,
+  90: 90%,
+  100: 100%,
+);
+
+// opacity
+$utilities: map-merge(
+  $utilities,
+  (
+    "opacity": (
+      property: opacity,
+      class: opacity,
+      values: $opacity,
     ),
   )
 );

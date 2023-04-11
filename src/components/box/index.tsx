@@ -1,21 +1,20 @@
 import styles from "./styles.module.scss";
 import * as Types from "types";
 
-function DialogBox(props: Types.Components.DialogBox.Props) {
+function Box(props: Types.Components.Box.Props) {
   return (
     <>
       <div
-        className={styles.container}
+        className={`${styles.container} ${props.className} box-border bg-white position-relative`}
         style={{
-          height: "150px", // 之後改 auto
           width: props.width,
           padding: props.padding,
         }}
       >
         <div
-          className={styles.char}
+          className={`${styles.char} position-absolute px-4 py-2_5 top-0 start-0`}
           style={{
-            backgroundColor: props.color,
+            backgroundColor: props.tagColor,
           }}
         >
           {props.character}
@@ -26,4 +25,4 @@ function DialogBox(props: Types.Components.DialogBox.Props) {
   );
 }
 
-export default DialogBox;
+export default Box;

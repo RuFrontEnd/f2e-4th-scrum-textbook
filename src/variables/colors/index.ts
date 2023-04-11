@@ -1,3 +1,25 @@
-// const tint = "#fff1ca"
+const white = "#FFF",
+  gray = "#BBB",
+  gray2 = "#939CAC",
+  gray3 = "717171",
+  green = "#ACD271",
+  green2 = "#6D952F",
+  green3 = "#527275",
+  green4 = "#2F454F",
+  orange = "#FBE4CA",
+  orange2 = "#FFB464",
+  orange3 = "#DE6E46";
 
-export {};
+export {
+  white,
+  gray,
+  gray2,
+  gray3,
+  green,
+  green2,
+  green3,
+  green4,
+  orange,
+  orange2,
+  orange3,
+};

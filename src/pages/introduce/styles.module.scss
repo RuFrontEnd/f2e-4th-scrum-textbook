@@ -1,0 +1,35 @@
+.plant1{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    width: 220px;
+    height: 375px;
+}
+
+.allCats{
+    width: 1130px;
+    height: 440px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plant2{
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 192px;
+    height: 320px;
+}
+
+.content{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 79px;
+}

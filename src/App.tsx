@@ -40,6 +40,10 @@ const browserRouter = [
     path: "/end",
     element: <Pages.End />,
   },
+  {
+    path: "/myComponents",
+    element: <Pages.MyComponents />,
+  },
 ];
 
 const router = createBrowserRouter(browserRouter);
