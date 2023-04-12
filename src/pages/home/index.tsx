@@ -8,20 +8,21 @@ const Home = () => {
   const onClickLearnButton = () => {};
 
   return (
-    <Layouts.Resolution>
-      <div className={styles.container}>
-        {/* <img src={index} className={styles.background} /> */}
-        <Title className={styles.titleIcon} />
-        {/* <Components.Button
-          className={styles.learnButton}
-          color={"#ACD271"}
-          width={"350px"}
-          onClick={onClickLearnButton}
-        >
-          <span className={styles.font}>進入學習</span>
-        </Components.Button> */}
-      </div>
-    </Layouts.Resolution>
+    <Layouts.BG>123</Layouts.BG>
+    // <Layouts.Resolution>
+    //   <div className={styles.container}>
+    //   <img src={index} className={styles.background} />
+    //   <Title className={styles.titleIcon} />
+    //   <Components.Button
+    //       className={styles.learnButton}
+    //       color={"#ACD271"}
+    //       width={"350px"}
+    //       onClick={onClickLearnButton}
+    //     >
+    //       <span className={styles.font}>進入學習</span>
+    //     </Components.Button>
+    //   </div>
+    // </Layouts.Resolution>
   );
 };
 
