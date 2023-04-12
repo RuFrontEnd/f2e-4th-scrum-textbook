@@ -6,7 +6,8 @@ import catAll from "assets/picture/png/cat-all.png";
 
 const Introduce = () => {
   return (
-    <Layouts.BG>
+    <Layouts.ProgressBG>
+      123
       {/* <div className={styles.content}>
           哈囉~歡迎進入「SCRUM 新手村」 <br />
           在正式加入專案開發之前，需要請你先了解 Scrum 的流程與精神！
@@ -15,7 +16,7 @@ const Introduce = () => {
       {/* <img src={plant1} className={styles.plant1} />
         <img src={catAll} className={styles.allCats} />
         <img src={plant2} className={styles.plant2} /> */}
-    </Layouts.BG>
+    </Layouts.ProgressBG>
   );
 };
 
