@@ -14,7 +14,9 @@ const BG = (props: Types.Layouts.BG.Props) => {
           height={768}
           className={`position-absolute top-0 start-0 z-index-down ${styles.img}`}
         />
-        <div className="px-14">{props.children}</div>
+        <div className={`${props.openUp && "h-100"} px-14`}>
+          {props.children}
+        </div>
       </div>
     </>
   );
