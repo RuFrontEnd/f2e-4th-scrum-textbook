@@ -19,19 +19,21 @@ const Home = () => {
           className={`${styles.top} d-flex justify-content-center align-items-center`}
         >
           <div className="d-flex flex-column justify-content-center align-items-center">
-            <Title className={`${styles["title-icon"]} mb-10`} width={900} />
-            <Components.Button
+            {/* <Title className={`${styles["title-icon"]} mb-10`} width={948} height={486} /> */}
+            {/* <Components.Button
               className={styles.button}
               width={"350px"}
               onClick={() => {}}
             >
               進入學習
-            </Components.Button>
+            </Components.Button> */}
           </div>
         </div>
         <div className={`position-relative ${styles.bottom}`}>
           {/* <img
-            className={`position-absolute top-50 start-50 translate-middle ${styles["cat-all"]}`}
+            width={1338}
+            height={510}
+            className={`position-absolute start-50 translate-middle ${styles["cat-all"]}`}
             src={cat_all}
           /> */}
           {/* <img

@@ -16,6 +16,12 @@
 }
 
 .cat-all {
+  top: calc(50% - 60px);
+  width: calc(500px + 50vw);
+  min-width: 1200px;
+  height: calc(200px + 25vh);
+  min-height: 300px;
+  object-fit: contain;
 }
 
 .plant-1 {
