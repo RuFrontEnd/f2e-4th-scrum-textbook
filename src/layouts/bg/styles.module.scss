@@ -1,8 +1,8 @@
+@import "maps";
+
 .bg {
-  // min-height: 768px;
-  // height: 100vh;
-  // min-width: 1366px;
-  // width: 100%;
+  min-height:$min-resolution-h;
+  min-width: $min-resolution-w;
 }
 
 .img {

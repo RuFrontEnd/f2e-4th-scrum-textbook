@@ -18,15 +18,19 @@ const Home = () => {
         <div
           className={`${styles.top} d-flex justify-content-center align-items-center`}
         >
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            {/* <Title className={`${styles["title-icon"]} mb-10`} width={948} height={486} /> */}
-            {/* <Components.Button
+          <div className="d-flex flex-column justify-content-center align-items-center w-100">
+            <Title
+              className={`${styles["title-icon"]} mb-10`}
+              width={960}
+              height={300}
+            />
+            <Components.Button
               className={styles.button}
               width={"350px"}
               onClick={() => {}}
             >
               進入學習
-            </Components.Button> */}
+            </Components.Button>
           </div>
         </div>
         <div className={`position-relative ${styles.bottom}`}>

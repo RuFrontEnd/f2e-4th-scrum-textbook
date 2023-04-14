@@ -43,15 +43,15 @@
   // background-image: url('/assets/picture/jpg/bg.jpg');
   // height: 100vh;
   // width: 100%;
+  // margin-bottom: 10%;
 }
 
 .title-icon {
-  //   min-width: 570px;
-  //   width: 46.875vw;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 50%;
-  //   transform: translate(-50%, 22%);
+  width: 60%;
+  min-width: 640px;
+  max-width: 960px;
+  aspect-ratio: 16 / 5;
+  height: 100%;
 }
 
 .button {
