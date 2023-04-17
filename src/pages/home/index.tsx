@@ -20,12 +20,12 @@ const Home = () => {
         >
           <div className="d-flex flex-column justify-content-center align-items-center w-100">
             <Title
-              className={`${styles["title-icon"]} mb-10`}
+              className={`${styles["title-icon"]} mb-10 z-index-10000`}
               width={960}
               height={300}
             />
             <Components.Button
-              className={styles.button}
+              className={`${styles.button} z-index-max`}
               width={"350px"}
               onClick={() => {}}
             >
@@ -37,10 +37,10 @@ const Home = () => {
           <img
             width={1338}
             height={510}
-            className={`object-fit-contain position-absolute start-50 translate-middle ${styles["cat-all"]}`}
+            className={`object-fit-contain position-absolute start-50 translate-middle z-index-10000 ${styles["cat-all"]}`}
             src={cat_all}
           />
-          <div className={`position-absolute d-flex align-items-end w-50`}>
+          <div className={`position-absolute d-flex align-items-end w-50 z-index-1000`}>
             <div className="position-relative w-100">
               <div
                 className={`${styles["left-appliance"]} position-absolute d-flex w-100 d-flex align-items-end`}
@@ -51,8 +51,6 @@ const Home = () => {
                   className={`object-fit-contain me-7 ${styles["plant-1"]}`}
                   src={plant_1}
                 />
-                {/* </div> */}
-                {/* <div> */}
                 <img
                   width={350}
                   height={422}
@@ -62,32 +60,32 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <img
-            className={`object-fit-contain position-absolute ${styles["plant-2"]}`}
-            src={plant_2}
-          /> */}
 
-          {/* <img
-            className={`object-fit-contain position-absolute ${styles["cat-basket"]}`}
-            src={cat_basket}
-          /> */}
+          <div
+            className={`position-absolute end-0 d-flex align-items-end w-50 z-index-1000`}
+          >
+            <div className="position-relative w-100">
+              <div
+                className={`${styles["right-appliance"]} position-absolute d-flex w-100 d-flex justify-content-end align-items-end`}
+              >
+                <img
+                  width={228}
+                  height={174}
+                  className={`object-fit-contain me-7 ${styles["cat-basket"]}`}
+                  src={cat_basket}
+                />
+                <img
+                  width={240}
+                  height={401}
+                  className={`object-fit-contain ${styles["plant-2"]}`}
+                  src={plant_2}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Layouts.BG>
-    // <Layouts.Resolution>
-    //   <div className={styles.container}>
-    //   <img src={index} className={styles.background} />
-    //   <Title className={styles.titleIcon} />
-    //   <Components.Button
-    //       className={styles.learnButton}
-    //       color={"#ACD271"}
-    //       width={"350px"}
-    //       onClick={onClickLearnButton}
-    //     >
-    //       <span className={styles.font}>進入學習</span>
-    //     </Components.Button>
-    //   </div>
-    // </Layouts.Resolution>
   );
 };
 
