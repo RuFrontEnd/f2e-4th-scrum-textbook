@@ -34,26 +34,41 @@ const Home = () => {
           </div>
         </div>
         <div className={`position-relative ${styles.bottom}`}>
-          {/* <img
+          <img
             width={1338}
             height={510}
-            className={`position-absolute start-50 translate-middle ${styles["cat-all"]}`}
+            className={`object-fit-contain position-absolute start-50 translate-middle ${styles["cat-all"]}`}
             src={cat_all}
-          /> */}
+          />
+          <div className={`position-absolute d-flex align-items-end w-50`}>
+            <div className="position-relative w-100">
+              <div
+                className={`${styles["left-appliance"]} position-absolute d-flex w-100 d-flex align-items-end`}
+              >
+                <img
+                  width={193}
+                  height={337}
+                  className={`object-fit-contain me-7 ${styles["plant-1"]}`}
+                  src={plant_1}
+                />
+                {/* </div> */}
+                {/* <div> */}
+                <img
+                  width={350}
+                  height={422}
+                  className={`object-fit-contain ${styles["cat-springboard"]}`}
+                  src={cat_springboard}
+                />
+              </div>
+            </div>
+          </div>
           {/* <img
-            className={`position-absolute ${styles["plant-1"]}`}
-            src={plant_1}
-          /> */}
-          {/* <img
-            className={`position-absolute ${styles["plant-2"]}`}
+            className={`object-fit-contain position-absolute ${styles["plant-2"]}`}
             src={plant_2}
           /> */}
+
           {/* <img
-            className={`position-absolute ${styles["cat-springboard"]}`}
-            src={cat_springboard}
-          /> */}
-          {/* <img
-            className={`position-absolute ${styles["cat-basket"]}`}
+            className={`object-fit-contain position-absolute ${styles["cat-basket"]}`}
             src={cat_basket}
           /> */}
         </div>

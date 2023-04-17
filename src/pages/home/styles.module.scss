@@ -17,23 +17,35 @@
 
 .cat-all {
   top: calc(50% - 60px);
-  width: calc(500px + 50vw);
-  min-width: 1200px;
-  height: calc(200px + 25vh);
-  min-height: 300px;
-  object-fit: contain;
+  width: 75%;
+  max-width: 1338px;
+}
+
+.left-appliance {
+  bottom: -150px;
 }
 
 .plant-1 {
-  top: 0;
+  top: calc(0% - 200px);
+  width: 20%;
+  height: auto;
+  // width: auto;
+  // max-width: 193px;
+}
+
+.cat-springboard {
+  top: calc(0% - 280px);
+  width: 37.5%;
+  height: auto;
+  // width: auto;
+  // left: 150px;
+  // width: 19.5%;
+  // max-width: 350px;
 }
 
 .plant-2 {
   top: -250px;
   right: 0;
-}
-
-.cat-springboard {
 }
 
 .cat-basket {
