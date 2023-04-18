@@ -1,5 +1,6 @@
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  openUp?: boolean;
 };
 
 export type { Props };

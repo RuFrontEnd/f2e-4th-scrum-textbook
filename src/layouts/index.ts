@@ -1,3 +1,4 @@
 import BG from "./bg";
+import ProgressBG from './progressBg'
 
-export { BG };
+export { BG,ProgressBG };

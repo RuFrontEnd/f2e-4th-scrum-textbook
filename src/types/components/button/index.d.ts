@@ -1,8 +1,7 @@
 import * as Types from "types";
 
 type Props = {
-  color: string;
-  width: string;
+  width?: string;
   disabled?: boolean;
   children: React.ReactNode;
   onClick: () => void;
