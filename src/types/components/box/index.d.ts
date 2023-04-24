@@ -5,7 +5,7 @@ type Props = Types.Commons.Props & {
   padding: string;
   tagColor: string;
   children: React.ReactNode;
-  character: React.ReactNode;
+  character?: React.ReactNode;
 };
 
 export type { Props };

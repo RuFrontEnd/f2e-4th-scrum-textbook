@@ -11,14 +11,16 @@ function Box(props: Types.Components.Box.Props) {
           padding: props.padding,
         }}
       >
-        <div
-          className={`${styles.char} position-absolute px-4 py-2_5 top-0 start-0`}
-          style={{
-            backgroundColor: props.tagColor,
-          }}
-        >
-          {props.character}
-        </div>
+        {props.character && (
+          <div
+            className={`${styles.char} position-absolute px-4 py-2_5 top-0 start-0`}
+            style={{
+              backgroundColor: props.tagColor,
+            }}
+          >
+            {props.character}
+          </div>
+        )}
         {props.children}
       </div>
     </>
