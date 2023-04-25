@@ -1,5 +1,5 @@
 const SprintPlanning = () => {
-  return <></>;
+  return <div>123</div>;
 };
 
 export default SprintPlanning;

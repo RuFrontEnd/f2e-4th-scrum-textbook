@@ -14,7 +14,7 @@ const ProductTodoList = () => {
         className={`position-relative h-100 d-flex justify-content-center ${styles.content}`}
       >
         <div
-          className={`h-100 d-flex flex-column align-items-center ms-50 z-index-100 ${styles.info}`}
+          className={`h-100 d-flex flex-column align-items-center z-index-100 ${styles.info}`}
         >
           <Components.Box
             className={`w-100 mb-8 ${styles.caption1}`}
