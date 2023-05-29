@@ -12,10 +12,10 @@
 
 .line {
   border-right: 3px solid map-get($project-colors, black);
-  width: calc(50% + 1.25px);
+  width: calc(50% + 1.5px);
 }
 
-.down-arrow {
+.bottom-arrow {
   display: inline-block;
   width: 16px;
   height: 16px;

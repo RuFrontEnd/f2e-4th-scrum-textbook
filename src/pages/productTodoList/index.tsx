@@ -53,11 +53,31 @@ const ProductTodoList = () => {
                     viceTitle="Product Backlog"
                     className="mt-5"
                   >
-                    <div className="mt-5 d-flex flex-column">
-                      <Components.Tray className="mb-5" width="350px" height="90px" />
-                      <Components.Tray className="mb-5" width="350px" height="90px" />
-                      <Components.Tray className="mb-5" width="350px" height="90px" />
-                      <Components.Tray width="350px" height="90px" />
+                    <div className="d-flex">
+                      <Components.Arrow
+                        className="me-5"
+                        height="auto"
+                        topText={"高"}
+                        bottomText={"低"}
+                      />
+                      <div className="mt-5 mb-5 d-flex flex-column">
+                        <Components.Tray
+                          className="mb-5"
+                          width="350px"
+                          height="90px"
+                        />
+                        <Components.Tray
+                          className="mb-5"
+                          width="350px"
+                          height="90px"
+                        />
+                        <Components.Tray
+                          className="mb-5"
+                          width="350px"
+                          height="90px"
+                        />
+                        <Components.Tray width="350px" height="90px" />
+                      </div>
                     </div>
                   </Components.List>
                 </>
@@ -83,8 +103,10 @@ const ProductTodoList = () => {
                 </>
               )}
             </div>
-            <div className={`d-flex flex-column align-items-center justify-content-between mx-16 ${styles.plates}`}>
-            請拖拉至清單中並調整順序
+            <div
+              className={`d-flex flex-column align-items-center justify-content-between mx-16 ${styles.plates}`}
+            >
+              請拖拉至清單中並調整順序
               <Components.Plate>
                 後台職缺管理功能（資訊上架、下架、顯示應徵者資料）
               </Components.Plate>
