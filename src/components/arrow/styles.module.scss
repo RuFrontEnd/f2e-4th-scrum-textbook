@@ -1,0 +1,26 @@
+@import "maps";
+
+.top-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 0 8px 16px 8px;
+  border-color: transparent transparent map-get($project-colors, black)
+    transparent;
+}
+
+.line {
+  border-right: 3px solid map-get($project-colors, black);
+  width: calc(50% + 1.25px);
+}
+
+.down-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 16px 8px 0 8px;
+  border-color: map-get($project-colors, black) transparent transparent
+    transparent;
+}
