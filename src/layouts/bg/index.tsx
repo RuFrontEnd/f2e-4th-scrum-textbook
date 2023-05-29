@@ -1,13 +1,11 @@
 import styles from "./styles.module.scss";
-import Logo from "assets/icon/svg/title-2.svg";
 import bg from "assets/picture/jpg/bg.jpg";
 import type * as Types from "types";
-import * as Components from "components";
 
 const BG = (props: Types.Layouts.BG.Props) => {
   return (
     <>
-      <div className={`position-relative h-100 w-100 ${styles.bg}`}>
+      <div className={`position-relative h-100`}>
         <img
           src={bg}
           width={1920}
