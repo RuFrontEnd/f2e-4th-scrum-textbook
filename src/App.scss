@@ -1,4 +1,5 @@
 @import "custom";
+@import "maps";
 
 html,
 body,
@@ -18,5 +19,7 @@ p {
 }
 
 body {
+  width: 1920px;
   font-family: "Noto Sans TC", sans-serif;
+  background: map-get($project-colors, floor);
 }

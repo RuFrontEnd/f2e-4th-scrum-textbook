@@ -1,4 +1,4 @@
-# 台灣旅遊景點導覽 <!-- | [Demo](https://johnsonmao.github.io/taiwan_tourguide/#/home) -->
+# Scrum 新手村 <!-- | [Demo](https://johnsonmao.github.io/taiwan_tourguide/#/home) -->
 
 ## Introduction
 

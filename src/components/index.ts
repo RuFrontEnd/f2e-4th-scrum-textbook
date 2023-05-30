@@ -1,3 +1,4 @@
+import Arrow from "./arrow";
 import Box from "./box";
 import Brand from "./brand";
 import Button from "./button";
@@ -10,6 +11,7 @@ import ProgressBar from "./progressBar";
 import Tray from "./tray";
 
 export {
+  Arrow,
   Box,
   Brand,
   Button,

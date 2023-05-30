@@ -1,3 +1,4 @@
+import type Arrow from "./arrow";
 import type Box from "./box";
 import type Brand from "./brand";
 import type Button from "./button";
@@ -10,6 +11,7 @@ import type ProgressBar from "./progressBar";
 import type Tray from "./tray";
 
 export type {
+  Arrow,
   Box,
   Brand,
   Button,

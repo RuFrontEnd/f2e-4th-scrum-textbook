@@ -9,7 +9,7 @@ const myComponents = () => {
       Button
       <br />
       <Components.Button
-        color={variables.colors.green}
+        // color={variables.colors.green}
         width={"350px"}
         onClick={() => {}}
         disabled={true}
@@ -40,7 +40,7 @@ const myComponents = () => {
       <div style={{ padding: "20px 0px" }} />
       List
       <br />
-      <Components.List />
+      {/* <Components.List /> */}
       <div style={{ padding: "20px 0px" }} />
       Mark
       <br />
@@ -71,13 +71,16 @@ const myComponents = () => {
           恭喜你完成了! 獲得逗貓鼠鼠一隻!
         </Components.Brand>
         <Components.Button
-          color={variables.colors.green}
+          // color={variables.colors.green}
           width={"450px"}
           onClick={() => {}}
         >
           繼續了解Sprint 流程！
         </Components.Button>
       </Components.Modal>
+      Arrow
+      <br />
+      <Components.Arrow height="100px" topText={"高"} bottomText={"低"} />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>

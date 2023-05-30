@@ -5,20 +5,20 @@ import * as Types from "types";
 
 function List(props: Types.Components.List.Props) {
   return (
-    <div className="position-relative">
+    <div className={`${props.className} position-relative mt-10`}>
       <img
         src={listClip}
         className={`position-absolute top-0 start-50 translate-middle`}
       />
       <div
-        className={`rounded-pill overflow-hidden border border-width-20 border-color-green-3 p-12 d-flex align-items-center flex-column ${styles.container}`}
+        className={`bg-white rounded-5 overflow-hidden border border-width-20 border-color-green-3 px-6 py-10 d-flex align-items-center flex-column ${styles.container}`}
       >
-        <p className="ff-noto-TC fw-medium fs-24px text-green-4 d-flex align-items-center mb-1">
-          產品待辦清單
+        <p className="fw-medium fs-24px text-green-4 d-flex align-items-center mb-1">
+          {props.title}
           <PawPrint width={20} height={20} />
         </p>
-        <p className="ff-roboto fs-16px text-green-4">Product Backlog</p>
-  
+        <p className="fw-medium fs-16px text-green-4">{props.viceTitle}</p>
+        {props.children}
       </div>
     </div>
   );
