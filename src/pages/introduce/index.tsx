@@ -14,7 +14,7 @@ const Introduce = () => {
   const [isReady, setIsReady] = useState(false);
 
   return (
-    <Layouts.ProgressBG>
+    <Layouts.ProgressBG completed={10}>
       {isReady ? (
         <>
           <Components.Box

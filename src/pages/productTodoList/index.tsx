@@ -13,7 +13,7 @@ const ProductTodoList = () => {
     [finished, setFinished] = useState(false);
 
   return (
-    <Layouts.ProgressBG openUp>
+    <Layouts.ProgressBG openUp completed={10}>
       <div
         className={`position-relative h-100 d-flex justify-content-center ${styles.content}`}
       >
@@ -45,7 +45,7 @@ const ProductTodoList = () => {
                     <div className="d-flex">
                       <Components.Arrow
                         className="me-5"
-                        height="auto"
+                        distance="auto"
                         topText={"高"}
                         bottomText={"低"}
                       />

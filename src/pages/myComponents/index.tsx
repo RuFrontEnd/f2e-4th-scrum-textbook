@@ -80,7 +80,7 @@ const myComponents = () => {
       </Components.Modal>
       Arrow
       <br />
-      <Components.Arrow height="100px" topText={"高"} bottomText={"低"} />
+      <Components.Arrow distance="100px" topText={"高"} bottomText={"低"} />
       {/* <div style={{ padding: "20px 0px" }} /> */}
       {/* <Layouts.BG>123</Layouts.BG> */}
     </>

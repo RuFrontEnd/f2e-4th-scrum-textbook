@@ -10,7 +10,7 @@
     transparent;
 }
 
-.line {
+.horizental-line {
   border-right: 3px solid map-get($project-colors, black);
   width: calc(50% + 1.5px);
 }
@@ -23,4 +23,28 @@
   border-width: 16px 8px 0 8px;
   border-color: map-get($project-colors, black) transparent transparent
     transparent;
+}
+
+.left-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent map-get($project-colors, black) transparent
+    transparent;
+}
+
+.vertical-line {
+  border-top: 3px solid map-get($project-colors, black);
+}
+
+.right-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent
+    map-get($project-colors, black);
 }

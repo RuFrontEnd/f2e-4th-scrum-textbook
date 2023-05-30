@@ -1,7 +1,7 @@
+import * as Types from "types";
+
 type Props = {
   children: React.ReactNode;
-  completed: number;
-  openUp?: boolean;
-};
+} & Types.Commons.Props;
 
 export type { Props };

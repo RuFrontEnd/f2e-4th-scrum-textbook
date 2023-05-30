@@ -12,7 +12,7 @@ const ProgressBG = (props: Types.Layouts.ProgressBg.Props) => {
           <img src={Logo} className={`${styles.logo} me-12`} width={340} />
           <div className="w-100">
             <p className="mb-3">新手進度</p>
-            <Components.ProgressBar completed={20} />
+            <Components.ProgressBar completed={props.completed} />
           </div>
         </div>
         <div className={`${props.openUp && styles.openUp}`}>

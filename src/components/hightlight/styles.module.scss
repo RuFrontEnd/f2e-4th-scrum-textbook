@@ -1,0 +1,5 @@
+@import "maps";
+
+.word {
+  color: map-get($project-colors, green-1);
+}
