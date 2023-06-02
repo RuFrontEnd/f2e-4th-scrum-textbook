@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import * as variables from "variables";
 import * as Types from "types";
 
 function Box(props: Types.Components.Box.Props) {
@@ -15,6 +16,9 @@ function Box(props: Types.Components.Box.Props) {
           <div
             className={`${styles.char} fw-medium position-absolute px-4 py-2_5 top-0 start-0`}
             style={{
+              color: props.tagFontColor
+                ? props.tagFontColor
+                : variables.colors.green4,
               backgroundColor: props.tagColor,
             }}
           >
